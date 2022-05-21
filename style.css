@@ -1,0 +1,21 @@
+#cabecera {
+	background: rgba(192, 191, 191, 0.164);
+	color: white;
+	height: 80px;
+	
+	width: 100%; 
+	left: 0; 
+	top: 0; 
+	position: fixed; 
+
+}
+
+#cabecera li {
+    display: inline;
+    padding: 0px 3px;
+}
+
+#cabecera nav {
+    text-align: 80%;
+    margin-top: 30px;
+}
