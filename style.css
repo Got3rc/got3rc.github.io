@@ -24,11 +24,13 @@ p {
     margin: 0 auto;
 }
 
-
+.main {
+    padding-top: 8rem;
+}
 
 .header {
     background: #333;
-    color:white;
+    color: greenyellow;
     padding:2rem 0;
 
     position: fixed;
@@ -37,7 +39,7 @@ p {
 }
 
 .header a {
-    color:white;
+    
     text-decoration: none;
 }
 
@@ -45,11 +47,15 @@ p {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
-    font-size: 1.3em;
+    font-size: 1.5em;
+    color:#20C20E;
+    
 }
+
 
 .navigation ul {
     margin:0;
@@ -66,6 +72,7 @@ p {
     padding:  0.5rem 0.5rem;
     transition: all 0.4s linear;
     border-radius:5px;
+    color:white;
 }
 
 .navigation ul li a:hover {
@@ -77,8 +84,48 @@ p {
     padding: 1.5rem 0;
     margin-top: 6rem;
     text-align: center;
+    color:white;
 }
 
-.main {
-    padding-top: 8rem;
+.menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width:1100px) {
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+    
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;
+    }
+
+    .navigation ul li {
+        display: block;
+    }
+    
+    .navigation ul li a {
+        display: block;
+        padding:  0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius:5px;
+        color:white;
+    }
+    
+    .navigation ul li a:hover {
+        background-color: #4a4a4a;
+    }
+
 }
