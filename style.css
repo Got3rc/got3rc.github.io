@@ -92,11 +92,20 @@ p {
 }
 
 @media only screen and (max-width:1100px) {
-    
+
+    .logo {
+        
+        margin: auto;
+        
+    }
+
+
     .menu-icon {
         display: block;
         cursor: pointer;
-        padding: 0.5rem 1rem;
+        width: 3rem;
+        fill: #20C20E;
+        margin: auto;
     }
 
     .navigation {
@@ -126,6 +135,20 @@ p {
     
     .navigation ul li a:hover {
         background-color: #4a4a4a;
+    }
+
+}
+
+
+@media only screen and (max-width:260px) {
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 3rem;
+        fill: #20C20E;
+        margin: auto;
+        margin-top: 1.5rem;
     }
 
 }
