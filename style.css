@@ -53,12 +53,17 @@ p {
 }
 
 .header {
-    background: rgba(84, 84, 84, 0.266);
+    background: rgba(95, 95, 95, 0.833);
     color: greenyellow;
     padding:1.5rem 0;
     position: fixed;
     top:0;
     width: 100%;
+}
+
+
+.header.bc {
+    background: rgb(0, 0, 0);
 }
 
 .header a {
@@ -104,7 +109,7 @@ p {
 
 .footer {
     background-color: #545454;
-    padding: 1.5rem 0;
+    padding:  0.2rem 0;
     margin-top: 6rem;
     text-align: center;
     color:white;
@@ -130,12 +135,18 @@ p {
 }
 
 
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:600px) {
 
     .logo {
         
         margin: auto;
         
+    }
+
+    .header{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        background-color: rgba(0, 0, 0, 0.686);
     }
 
 
@@ -145,6 +156,7 @@ p {
         width: 3rem;
         fill: #20C20E;
         margin: auto;
+        height: 40px;
     }
 
     .navigation {
@@ -158,10 +170,13 @@ p {
 
     .navigation ul.show {
         display: block;
+    
     }
+
 
     .navigation ul li {
         display: block;
+        text-align: center;
     }
     
     .navigation ul li a {
@@ -169,11 +184,15 @@ p {
         padding:  0.5rem 0;
         transition: all 0.4s linear;
         border-radius:5px;
-        color:white;
+        color:rgb(255, 255, 255);
+        margin-top:5px;
+
+        
     }
     
     .navigation ul li a:hover {
-        background-color: #4a4a4a;
+        background-color: #fcfcfc;
+        color: #000000;
     }
 
 }
