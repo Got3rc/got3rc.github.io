@@ -1,0 +1,60 @@
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 1, -300deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.u--rotate {
+  animation: rotate 1s;
+  transform-origin: center;
+}
+@keyframes rotateUpLeft {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.u--rotateUpLeft {
+  animation: rotateUpLeft 1s;
+  transform-origin: left bottom;
+}
+@keyframes rotateUpRight {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.u--rotateUpRight {
+  animation: rotateUpRight 1s;
+  transform-origin: right bottom;
+}
+@keyframes rotateDownLeft {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.u--rotateDownLeft {
+  animation: rotateDownLeft 1s;
+  transform-origin: top left;
+}
+@keyframes rotateDownRight {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.u--rotateDownRight {
+  animation: rotateDownRight 1s;
+  transform-origin: top right;
+}/*# sourceMappingURL=rotate.css.map */

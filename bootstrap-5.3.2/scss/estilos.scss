@@ -1,0 +1,141 @@
+/* Sobre escribir bootstrap */
+$primary: #2d314a;
+$secondary: #212336;
+
+@import "./bootstrap.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Suez+One&display=swap');
+
+@import "./animaciones/zoom.scss";
+
+@import "./animaciones_hover/hover.scss";
+
+@import "animacionesJorge";
+
+@import "_galeria";
+
+
+/* VARIABLES GENERICAS WEB */
+
+$rojo: #FF4A57;
+$primary-o: #2d314a90;
+
+
+/* ESTILOS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $secondary;
+    background-image: url("../../img/path_fondo.png");
+    background-repeat: repeat;
+    font-family: "Sora",
+}
+
+.en-resaltado{
+    color: $rojo;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bento-caja {
+    background-color: $primary-o;
+    border-radius: 10px;
+}
+
+.bento-caja-t {
+    background-color: $primary-o;
+    border-radius: 10px;
+}
+
+/* Animación para la vibracion de los elementos iconos y estilos*/
+
+
+.icon{
+    transition: 1s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.vibrar-anima {
+    animation: vibrar 0.5s;
+}
+
+/* Diseño barra de scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #212336;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2d314a;
+    border-radius: 5px;
+}
+
+/* Animacion Foto Perfil */
+.foto-perfil:hover{
+    animation: rotarFoto 2s  linear;
+}
+
+
+/* LINEAS TIEMPO EXPERIENCIA */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid $rojo;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+
+.form-control-transparent {
+    background-color: rgba(255, 255, 255, 0.145); /* Color blanco con opacidad del 50% */
+    border: 1px solid #ced4da; /* Borde del input */
+    color: white;
+}
+
+.form-control-transparent {
+    background-color: rgba(255, 255, 255, 0.145); /* Color blanco con opacidad del 50% */
+    border: 1px solid #ced4da; /* Borde del input */
+    color: white;
+    &:focus{
+        background-color: rgba(255, 255, 255, 0.145); /* Color blanco con opacidad del 50% */
+        border: 1px solid #ced4da; /* Borde del input */
+        color: white; 
+    }
+}

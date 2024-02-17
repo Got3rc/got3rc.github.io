@@ -1,0 +1,55 @@
+@keyframes flip {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, -180deg);
+  }
+}
+.u--flip {
+  animation: flip 2s ease-out;
+}
+@keyframes flipX {
+  0% {
+    transform: rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: rotate3d(1, 0, 0, -20deg);
+  }
+  60% {
+    transform: rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate3d(1, 0, 0, -5deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+}
+.u--flipX {
+  animation: flipX 2s ease-in;
+}
+@keyframes flipY {
+  0% {
+    transform: rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: rotate3d(0, 1, 0, -20deg);
+  }
+  60% {
+    transform: rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate3d(0, 1, 0, -5deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
+.u--flipY {
+  animation: flipY 2s ease-in;
+}/*# sourceMappingURL=flip.css.map */
